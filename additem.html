@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Ticket Hub</title>
    <link rel="stylesheet" href="visual.css" type="text/css" />
     <meta charset="UTF-8">
 </head>
 <body>
 <header>
-    <h1>Searching...</h1>
-    <h2></h2>
-</header>
-<article>
-<p> </p>
-</article>
-<footer>
-    <p></p>
-</footer>
+    <h1>Ticket Info</h1>
+<form action="@" method = "post">
+	<fieldset>
+			<legend>Information</legend>
+				<ul>
+					<li><label for="team"> NFL Team:  </label><input type = "text" id = "team" placeholder="enter favorite team"/></li>
+ 					<li><label for="fname"> First Name: </label><input type = "text" id = "fname" placeholder="Enter name"/></li>
+ 					<li><label for="mail"> E-mail: </label><input type = "url" id = "mail" placeholder="www.google.com"/></li>
+  	  			</ul>
+</fieldset>
+	<fieldset>
+			<legend>Preferences</legend>
+				<ul>
+					<li><input type="radio" value="Single"  id="single" name="single"/><label for => Single Season </label></li>
+ 					<li><input type="radio" value ="Season" id="season" name="season"/><label for => Full Season </label></li>
+ 					<li><input type="radio" checked value ="ANY" id="any "name="any"/><label for =>any...</label></li>
+  	  			</ul>
+	 </fieldset>
+<fieldset>
+	<legend>Preferences</legend>
+		<ul>
+			<li><input type="checkbox" value="NFC" id="nfc" name="nfc"/><label for =>NFC</label></li>
+ 			<li><input type="checkbox" value="AFC" id="afc" name="afc"/><label for =>AFC</label></li>
+ 			<li><input type="checkbox" checked value="ANY" id="any "name="any"/><label for =>any...</label></li>
+  	  	</ul>
+</fieldset>
+ 	<label for="payment">Preferred Method of Payment</label>
+		<select id="payment">
+			<optgroup label="Credit Card">
+				<option value ="Cash"><Cash</option>
+			</optgroup>
+		</select>
+			
 <script type="text/javascript" src="main.js"></script>
+</form>
 </body>
 </html>
